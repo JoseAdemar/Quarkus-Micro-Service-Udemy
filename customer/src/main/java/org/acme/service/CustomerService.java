@@ -50,6 +50,7 @@ public class CustomerService {
         customerDTO.setName(customer.getName());
         customerDTO.setPhone(customer.getPhone());
         customerDTO.setEmail(customer.getEmail());
+        customerDTO.setAge(customer.getAge());
         return customerDTO;
     }
 
@@ -60,6 +61,7 @@ public class CustomerService {
         customerEntity.setName(customer.getName());
         customerEntity.setPhone(customer.getPhone());
         customerEntity.setEmail(customer.getEmail());
+        customerEntity.setAge(customer.getAge());
         return customerEntity;
     }
 
