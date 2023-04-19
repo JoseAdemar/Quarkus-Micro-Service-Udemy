@@ -1,23 +1,17 @@
-package org.acme.entity;
+package org.acme.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.extern.jackson.Jacksonized;
 
-import javax.persistence.*;
 import java.math.BigDecimal;
 
-@Entity
-@Table(name = "product")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ProductEntity {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+@Jacksonized
+public class ProductDTO {
 
     private String name;
 
